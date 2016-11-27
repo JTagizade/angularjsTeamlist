@@ -1,0 +1,22 @@
+  <div class="content">
+        <button ng-click="order = 'name'">Order by Name</button>
+        <button ng-click="order = '-price'">Order by Price</button>
+          <input type="text" ng-model="search" placeholder="Search by team name"/>
+              <ul id="team-list">
+                  <li ng-repeat="team in teams | orderBy: order | filter: search">
+                    <img ng-src="{{team.thumbnail}}"  style="margin: -12px 10px 0 0; float:left; width: 50px;" ng-show="team.thumbnail"/>
+                  <h3> {{team.name}} - {{team.price | currency: '$':0}} </h3>
+                  <div class="remove" ng-click="removeTeam(team)">&#x274E</div>
+                  <span style="background: {{team.color}}" class="color">{{team.color}} jersey</span>
+                  </li>
+              </ul>
+              <form ng-submit="addTeam()">
+                  <input type="text" placeholder="Name" ng-model="newTeam.name" />
+                  <input type="text" placeholder="Color" ng-model="newTeam.color" />
+                  <input type="text" placeholder="Price" ng-model="newTeam.price" />
+                  <input type="submit" value="Add new team">
+
+              </form>
+
+                <div ng-click="removeAll()" class="removeAll">&#x274E</div>
+  </div>

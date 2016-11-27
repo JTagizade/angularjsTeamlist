@@ -1,0 +1,26 @@
+[{
+	"name": "Real Madrid",
+	"color": "white   ",
+	"price": 2520000,
+	"thumbnail": "content/img/rm.png"
+}, {
+	"name": "Los Angeles Galaxy",
+	"color": "blue",
+	"price": 175000,
+	"thumbnail": "content/img/lag.png"
+}, {
+	"name": "Internazionale",
+	"color": "darkblue",
+	"price": 559000,
+	"thumbnail": "content/img/inter.png"
+}, {
+	"name": "Manchester United",
+	"color": "red",
+	"price": 2300000,
+	"thumbnail": "content/img/mu.png"
+}, {
+	"name": "Qarabag",
+	"color": "black",
+	"price": 127800,
+	"thumbnail": "content/img/qara.png"
+}]
